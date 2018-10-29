@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.gmail.noviawulandari0611.radiobutton.MainActivity">
+
+    <EditText
+        android:id="@+id/editNamaMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="create your name"
+        android:inputType="textPersonName"
+        tools:fontFamily="monospace" />
+
+    <EditText
+        android:id="@+id/editNimMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNamaMhs"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="create your number"
+        android:inputType="number" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editNimMhs"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="43dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="Mahasiswa Uzur" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="IPK " />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="38dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="serif-monospace"
+                    android:text="3.00-4.00" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="serif-monospace"
+                    android:text="2.00-2.99" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="serif-monospace"
+                    android:text="1.00-1.99" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="serif-monospace"
+                    android:text="0.00-0.99" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="37dp"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:onClick="onClick"
+        android:text="SUBMIT" />
+
+</RelativeLayout>
